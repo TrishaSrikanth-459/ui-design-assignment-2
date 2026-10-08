@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive Lu.ma Events-page recreation for teaching HTML, CSS, and JavaScript state." />
+    <title>Events — Lu.ma Teaching Build</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="events.js" defer></script>
+  </head>
+  <body class="events-page">
+    <a class="skip-link" href="#events-main">Skip to main content</a>
+
+    <header class="events-site-header">
+      <a class="events-home-mark" href="events.html" aria-label="Events home">
+        <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/star-four-fill.svg" alt="" />
+      </a>
+      <nav class="events-primary-nav" aria-label="Primary navigation">
+        <a class="events-nav-link is-current" href="events.html" aria-current="page">
+          <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/ticket.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Events</span>
+        </a>
+        <span class="events-nav-link" aria-disabled="true">
+          <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/calendar.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Calendars</span>
+        </span>
+        <span class="events-nav-link" aria-disabled="true">
+          <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/compass.svg" width="18" height="18" alt="" aria-hidden="true" />
+          <span>Discover</span>
+        </span>
+      </nav>
+
+      <div class="events-account-nav"><span>Alex Morgan</span></div>
+    </header>
+
+    <main id="events-main" class="events-main" tabindex="-1">
+      <div class="events-title-row">
+        <h1>Events</h1>
+        <div class="event-view-switcher" aria-label="Event timeframe">
+          <a class="is-selected" href="#upcoming-events" aria-current="page">Upcoming</a>
+          <span aria-disabled="true">Past</span>
+        </div>
+      </div>
+
+      <section class="event-timeline" id="upcoming-events" aria-label="Upcoming events">
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--relative">Today</h2>
+            <p>Wednesday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" id="event-studio-night">
+            <button class="timeline-event-link" type="button" data-event-id="studio-night" aria-labelledby="event-studio-night-title" aria-controls="invitation-details" aria-expanded="false" aria-haspopup="dialog"></button>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-12T18:30:00-04:00">6:30 PM</time>
+              <h3 id="event-studio-night-title">Studio Night Demo Party #4</h3>
+              <p class="event-host">
+                <span class="host-avatar"><img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/fractal-party.png" alt="" /></span>
+                By Maya Chen
+              </p>
+              <p class="event-place">
+                <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/map-pin.svg" alt="" />
+                Design Lab
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-status-for="studio-night">Invited</span>
+                <span class="attendee-stack" aria-label="More than 40 attendees">
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/cafe-cursor.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/creative-edge.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/steel-silicon.avif" alt="" />
+                  <span>+42</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/fractal-party.png" alt="Soft abstract color-field event artwork" />
+          </article>
+        </div>
+
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--relative">Tomorrow</h2>
+            <p>Thursday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" id="event-creative-ai">
+            <button class="timeline-event-link" type="button" data-event-id="creative-ai" aria-labelledby="event-creative-ai-title" aria-controls="invitation-details" aria-expanded="false" aria-haspopup="dialog"></button>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-13T18:00:00-04:00">6:00 PM</time>
+              <h3 id="event-creative-ai-title">Campus Creative AI Forum</h3>
+              <p class="event-host avatar-stack-row">
+                <span class="avatar-stack" aria-hidden="true">
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/cafe-cursor.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/creative-edge.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/mama-nyc.avif" alt="" />
+                </span>
+                <span>By Jordan Lee, Priya Shah &amp; Alex Kim</span>
+              </p>
+              <p class="event-place">
+                <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/map-pin.svg" alt="" />
+                Innovation Space
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-status-for="creative-ai">Going</span>
+                <span class="attendee-stack" aria-label="More than 300 attendees">
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/startup-founders.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/steel-silicon.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/agentics.avif" alt="" />
+                  <span>+318</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/agentics.avif" alt="Dark green poster reading Use agents effectively" />
+          </article>
+        </div>
+
+        <div class="event-day-group">
+          <header class="event-day-label">
+            <h2 class="event-day-heading event-day-heading--calendar">Aug 14</h2>
+            <p>Friday</p>
+          </header>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="timeline-event-card" id="event-friday-social">
+            <button class="timeline-event-link" type="button" data-event-id="friday-social" aria-labelledby="event-friday-social-title" aria-controls="invitation-details" aria-expanded="false" aria-haspopup="dialog"></button>
+            <div class="timeline-event-copy">
+              <time datetime="2026-08-14T18:30:00-04:00">6:30 PM</time>
+              <h3 id="event-friday-social-title">Friday Night Social</h3>
+              <p class="event-host">
+                <span class="host-avatar"><img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/mama-nyc.avif" alt="" /></span>
+                By Campus Neighbors
+              </p>
+              <p class="event-place">
+                <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/map-pin.svg" alt="" />
+                College Walk
+              </p>
+              <div class="status-and-attendees">
+                <span class="invitation-status" data-status-for="friday-social">Invited</span>
+                <span class="attendee-stack" aria-label="More than 80 attendees">
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/mama-nyc.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/startup-founders.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/steel-silicon.avif" alt="" />
+                  <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/agentics.avif" alt="" />
+                  <span>+88</span>
+                </span>
+              </div>
+            </div>
+            <img class="timeline-event-image" src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/mama-nyc.avif" alt="Friday social artwork showing a person beside a colorful storefront" />
+          </article>
+        </div>
+      </section>
+      <details class="testing-tools">
+        <summary>Testing tools</summary>
+        <p>Reset the supplied invitations, or preview the two recoverable edge states.</p>
+        <div class="testing-actions">
+          <button type="button" data-action="reset">Reset invitations</button>
+          <button type="button" data-action="preview-empty">Preview no selection</button>
+          <button type="button" data-action="preview-error">Preview missing invitation</button>
+        </div>
+      </details>
+      <p class="page-feedback" role="status" aria-live="polite" aria-atomic="true" data-role="page-announcement"></p>
+    </main>
+
+    <section class="invitation-layer" id="invitation-details" role="dialog" aria-modal="true"
+      aria-labelledby="invitation-title" aria-hidden="true" hidden inert>
+      <button class="invitation-scrim" type="button" data-action="close-invitation" aria-label="Close event details" tabindex="-1"></button>
+      <div class="invitation-panel" tabindex="-1">
+        <header class="invitation-toolbar">
+          <button class="panel-close" type="button" data-action="close-invitation" aria-label="Close event details" data-tooltip="Close">
+            <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/chevrons-right.svg" alt="" />
+          </button>
+          <span>Event details</span>
+        </header>
+        <div class="invitation-panel-scroll">
+          <h2 class="invitation-title" id="invitation-title">Choose an invitation</h2>
+          <div data-role="empty-state" hidden>
+            <p>No invitation is selected. Close this panel and choose an event card to view its details.</p>
+          </div>
+          <div data-role="error-state" hidden>
+            <p class="error-message">We couldn’t find this invitation. Close the panel, choose an event from the list, and try again. Your invitation statuses have not changed.</p>
+          </div>
+          <div data-role="event-content" hidden>
+            <img class="invitation-hero" data-role="event-image" src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/images/fractal-party.png" alt="Soft abstract color-field event artwork" />
+            <p class="panel-host type-body" data-role="event-host"></p>
+            <div class="invitation-facts">
+              <div class="invitation-fact">
+                <time class="invitation-date-tile" data-role="date-tile"><span data-role="month"></span><strong data-role="day"></strong></time>
+                <p><strong class="type-medium" data-role="event-date"></strong><span class="type-body-small" data-role="event-time"></span></p>
+              </div>
+              <div class="invitation-fact">
+                <img src="https://raw.githubusercontent.com/silka-co/ui-design-course-assets/main/icons/map-pin.svg" alt="" />
+                <p><strong class="type-medium" data-role="event-location"></strong><span class="type-body-small" data-role="event-address"></span></p>
+              </div>
+            </div>
+            <section class="invitation-registration" aria-labelledby="registration-heading">
+              <h3 class="invitation-section-label type-semibold" id="registration-heading">Registration</h3>
+              <div class="registration-invite-copy"><p><strong data-role="registration-title"></strong><span class="type-body" data-role="registration-copy"></span></p></div>
+              <p class="registration-welcome">Welcome, Alex. Current status: <strong data-role="panel-status"></strong></p>
+              <div class="registration-confirmation" data-state-view="going" hidden><h4 class="confirmation-title">You’re In</h4><p>You are registered for this event.</p></div>
+              <div class="registration-confirmation" data-state-view="declined" hidden><h4 class="confirmation-title">Invitation Declined</h4><p>You are not registered for this event. You can accept it below if your plans change.</p></div>
+              <p class="action-feedback" data-role="visible-feedback"></p>
+              <div class="registration-buttons">
+                <button class="accept-invite-button" type="button" data-action="accept-invitation">Accept Invite</button>
+                <button class="decline-invite-button" type="button" data-action="decline-invitation">Decline</button>
+              </div>
+            </section>
+            <section class="invitation-about" aria-labelledby="about-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="about-heading">About Event</h3>
+              <p class="type-body" data-role="event-description"></p>
+            </section>
+            <section class="invitation-location" aria-labelledby="location-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="location-heading">Location</h3>
+              <p data-role="location-summary"></p>
+            </section>
+            <section class="invitation-host" aria-labelledby="host-heading">
+              <h3 class="invitation-section-label type-body-small type-semibold" id="host-heading">Hosted By</h3>
+              <p data-role="host-summary"></p>
+            </section>
+          </div>
+          <p class="sr-only" role="status" data-role="invitation-announcement" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
